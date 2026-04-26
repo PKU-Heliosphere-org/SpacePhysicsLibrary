@@ -1,0 +1,47 @@
+site_name: SpacePhysicsLibrary
+site_description: Space physics knowledge base built with MkDocs Material.
+site_url: https://pku-heliosphere-org.github.io/SpacePhysicsLibrary/
+repo_url: https://github.com/PKU-Heliosphere-org/SpacePhysicsLibrary
+repo_name: PKU-Heliosphere-org/SpacePhysicsLibrary
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 首页: index.md
+  - 基础理论:
+      - 磁流体力学: theory/mhd.md
+      - 线性等离子体理论: theory/linear-plasma.md
+      - 准线性理论: theory/quasi-linear.md
+      - 等离子体不稳定性: theory/instability.md
+  - 探测技术:
+      - 原位磁场探测: observation/mag-detect.md
+      - 原位粒子探测: observation/particle-detect.md
+  - 数值模拟方法:
+      - MHD数值求解: numeric/mhd-solver.md
+      - 粒子模拟PIC: numeric/pic.md
