@@ -20,7 +20,10 @@
 
 ### 数值模拟方法
 
-- [MHD数值求解](numeric/mhd-solver.md)
+#### MHD数值模拟
+##### 特征线方法模拟
+- [磁流体力学的特征线方法介绍](numeric/MHD-simulation/MOC-simulation/磁流体力学的特征线方法与RH关系介绍/磁流体力学的特征线方法介绍.md)
+- [特征线方法与RH关系融合模拟MHD激波形成演化](numeric/MHD-simulation/MOC-simulation/磁流体力学的特征线方法与RH关系介绍/特征线方法与RH关系模拟MHD扰动传播与激波形成演化.md)
 - [粒子模拟PIC](numeric/pic.md)
 
 ## 维护说明
